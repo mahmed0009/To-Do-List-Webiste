@@ -1,14 +1,20 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Inder&display=swap');
+
+* {
     margin: 0;
     padding: 0;
+    font-family: "Inder", sans-serif;
 }
-body{
+
+body {
     width: 100vw;
     box-sizing: border-box;
     overflow-x: hidden;
+    background-color: white;
 }
-.main-container{
-    border: solid red;
+
+.main-container {
+    padding: 5%;
     width: auto;
     height: auto;
     display: flex;
@@ -16,19 +22,25 @@ body{
     align-items: center;
     justify-content: center;
 }
-.main-container .title{
+
+.main-container .title {
     font-size: 44px;
 }
-.main-container .add-task{
-    border: solid blue;
+
+.main-container .add-task {
+    border-radius: 50px 50px 0px 0px;
+    padding: 1%;
+    background-color: #e4e4e45c;
     height: auto;
-    width: 70%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-shadow: 10px 0px 8px 3px rgba(0, 0, 0, 0.06);
 }
-.main-container .add-task .content{
+
+.main-container .add-task .content {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,38 +48,101 @@ body{
     gap: 1%;
     padding: 1%;
 }
-.main-container .add-task .content input{
-    width: 70%;
-    border:transparent;
-    background: black;
-    color: white;
+
+.main-container .add-task .content input {
+    width: 50%;
+    border: transparent;
+    background: #ffffff;
+    color: #333333;
     border-radius: 10px;
     outline: none;
-    padding: 1%;
+    padding: 2%;
 }
-.main-container .add-task .content button{
-    width: 15%;
+
+.main-container .add-task .content button {
     background: black;
     color: white;
-    border:transparent;
+    border: transparent;
     border-radius: 10px;
     outline: none;
-    padding: 1%;
+    padding: 2%;
 }
-.main-container .pending-task{
-    border: solid green;
+
+.main-container .all-task {
+    border-radius: 0px 0px 50px 50px;
+    padding: 1%;
+    background-color: #e4e4e45c;
     height: auto;
-    width: 70%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 10px 0px 8px 3px rgba(0, 0, 0, 0.06);
+}
+
+
+.main-container ul {
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.main-container .content ul{
-    list-style: decimal;
+
+.main-container ul li {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2%;
+    background-color: white;
+    border-radius: 12px;
+    margin: 1%;
 }
-.main-container .completed-task{
-    border: solid yellow;
-    height: auto;
-    width: 70%;
+
+.main-container ul li .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.done {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.delete {
+    background-color: #f44336;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+
+}
+
+@media screen and (max-width:1110px) {
+    .main-container .add-task {
+        width: 85%;
+    }
+
+    .main-container .all-task {
+        width: 85%;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .main-container .title {
+        font-size: 32px;
+    }
+}
+@media screen and (max-width:350px) {
+    .main-container .title {
+        font-size: 20px;
+    }
 }
