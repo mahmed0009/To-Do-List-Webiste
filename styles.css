@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.main-container{
+    border: solid red;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main-container .title{
+    font-size: 44px;
+}
+.main-container .add-task{
+    border: solid blue;
+    height: auto;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main-container .add-task .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    gap: 1%;
+    padding: 1%;
+}
+.main-container .add-task .content input{
+    width: 70%;
+    border:transparent;
+    background: black;
+    color: white;
+    border-radius: 10px;
+    outline: none;
+    padding: 1%;
+}
+.main-container .add-task .content button{
+    width: 15%;
+    background: black;
+    color: white;
+    border:transparent;
+    border-radius: 10px;
+    outline: none;
+    padding: 1%;
+}
+.main-container .pending-task{
+    border: solid green;
+    height: auto;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main-container .content ul{
+    list-style: decimal;
+}
+.main-container .completed-task{
+    border: solid yellow;
+    height: auto;
+    width: 70%;
+}
