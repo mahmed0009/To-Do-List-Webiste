@@ -140,9 +140,44 @@ body {
     .main-container .title {
         font-size: 32px;
     }
+
+    .main-container ul {
+        font-size: 14px;
+    }
 }
+
 @media screen and (max-width:350px) {
+    .main-container .add-task {
+        width: 100%;
+    }
+
+    .main-container .add-task .content input {
+        width: 60%;
+    }
+
+    .main-container .add-task .content button {
+        padding: 2%;
+        font-size: 11px;
+    }
+
+    .main-container .all-task {
+        width: 100%;
+    }
+
     .main-container .title {
         font-size: 20px;
+    }
+
+    .main-container ul {
+        font-size: 11px;
+    }
+
+    .done {
+        padding: 5px;
+    }
+
+    .delete {
+        padding: 5px;
+
     }
 }
