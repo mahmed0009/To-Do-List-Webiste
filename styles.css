@@ -66,6 +66,7 @@ body {
     border-radius: 10px;
     outline: none;
     padding: 2%;
+    cursor: pointer;
 }
 
 .main-container .all-task {
@@ -114,6 +115,7 @@ body {
     padding: 10px;
     border: none;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .delete {
@@ -122,6 +124,7 @@ body {
     padding: 10px;
     border: none;
     border-radius: 10px;
+    cursor: pointer;
 
 }
 
